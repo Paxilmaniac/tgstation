@@ -252,9 +252,7 @@
 	desc = "A wooden contraption, used to dry plant products, food and hide."
 	icon = 'icons/obj/hydroponics/equipment.dmi'
 	icon_state = "drying_rack"
-	use_power = IDLE_POWER_USE
-	idle_power_usage = 5
-	active_power_usage = 200
+	use_power = FALSE
 	visible_contents = FALSE
 	base_build_path = /obj/machinery/smartfridge/drying_rack //should really be seeing this without admin fuckery.
 	var/drying = FALSE
@@ -302,16 +300,6 @@
 			return TRUE
 	return FALSE
 
-/obj/machinery/smartfridge/drying_rack/powered()
-	if(!anchored)
-		return FALSE
-	return ..()
-
-/obj/machinery/smartfridge/drying_rack/power_change()
-	. = ..()
-	if(!powered())
-		toggle_drying(TRUE)
-
 /obj/machinery/smartfridge/drying_rack/load(/obj/item/dried_object) //For updating the filled overlay
 	. = ..()
 	update_appearance()
@@ -343,10 +331,8 @@
 /obj/machinery/smartfridge/drying_rack/proc/toggle_drying(forceoff)
 	if(drying || forceoff)
 		drying = FALSE
-		use_power = IDLE_POWER_USE
 	else
 		drying = TRUE
-		use_power = ACTIVE_POWER_USE
 	update_appearance()
 
 /obj/machinery/smartfridge/drying_rack/proc/rack_dry(obj/item/target)
