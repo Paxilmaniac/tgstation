@@ -39,11 +39,34 @@
 	icon_state = "dark_large"
 	},
 /area/space)
+"h" = (
+/obj/effect/turf_decal/siding/wideplating/dark/end{
+	dir = 4
+	},
+/obj/structure/holosign/barrier/atmos/sturdy{
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 20);
+	icon_state = "wave2";
+	name = "hanger atmospheric retainer"
+	},
+/turf/open/floor/light,
+/area/space)
 "i" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L6"
 	},
 /turf/open/floor/engine/hull,
+/area/space)
+"j" = (
+/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/structure/holosign/barrier/atmos/sturdy{
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 20);
+	icon_state = "wave2";
+	name = "hanger atmospheric retainer"
+	},
+/turf/open/floor/light,
 /area/space)
 "m" = (
 /obj/effect/turf_decal/plaque{
@@ -55,12 +78,14 @@
 /turf/open/floor/engine/hull,
 /area/space)
 "q" = (
+/obj/effect/turf_decal/siding/wideplating/dark/end{
+	dir = 8
+	},
 /obj/structure/holosign/barrier/atmos/sturdy{
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 20);
 	icon_state = "wave2";
-	name = "hangar bay atmospheric lock"
+	name = "hanger atmospheric retainer"
 	},
-/obj/effect/turf_decal/siding/wideplating/dark,
 /turf/open/floor/light,
 /area/space)
 "r" = (
@@ -27075,7 +27100,7 @@ X
 X
 X
 c
-q
+j
 p
 p
 p
@@ -27332,7 +27357,7 @@ X
 X
 X
 c
-q
+j
 y
 y
 p
@@ -27589,7 +27614,7 @@ X
 X
 X
 c
-q
+j
 p
 p
 p
@@ -27846,7 +27871,7 @@ X
 X
 X
 c
-q
+j
 y
 y
 p
@@ -28103,7 +28128,7 @@ X
 X
 X
 c
-q
+j
 p
 p
 p
@@ -28360,7 +28385,7 @@ X
 X
 X
 c
-q
+j
 y
 y
 p
@@ -28617,7 +28642,7 @@ X
 X
 X
 c
-q
+j
 p
 p
 p
@@ -28874,7 +28899,7 @@ X
 X
 X
 c
-q
+h
 p
 p
 O
@@ -30673,7 +30698,7 @@ X
 X
 X
 E
-q
+j
 p
 p
 p
@@ -30930,7 +30955,7 @@ X
 X
 X
 E
-q
+j
 y
 y
 p
@@ -31187,7 +31212,7 @@ X
 X
 X
 E
-q
+j
 p
 p
 p
@@ -31444,7 +31469,7 @@ X
 X
 X
 E
-q
+j
 y
 y
 p
@@ -31701,7 +31726,7 @@ X
 X
 X
 E
-q
+j
 p
 p
 p
@@ -31958,7 +31983,7 @@ X
 X
 X
 E
-q
+j
 y
 y
 p
@@ -32215,7 +32240,7 @@ X
 X
 X
 E
-q
+j
 p
 p
 p
@@ -32472,7 +32497,7 @@ X
 X
 X
 E
-q
+h
 p
 p
 p
