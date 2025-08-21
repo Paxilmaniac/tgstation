@@ -897,6 +897,9 @@ GLOBAL_LIST_EMPTY_TYPED(greenscreen_displays, /obj/effect/abstract/greenscreen_d
 	// show things like wheelchairs, but not beds which are low
 	if(thing.can_buckle && (thing.buckle_lying == NO_BUCKLE_LYING || thing.buckle_lying == 0))
 		return TRUE
+	// Show holopad holograms, meaning the AI can captain's cast, as well as allowing holotapes to be played
+	if(istype(thing, /obj/effect/overlay/holo_pad_hologram))
+		return TRUE
 	return FALSE
 
 /obj/machinery/greenscreen_camera/proc/turf_entered(datum/source, atom/movable/entered)
